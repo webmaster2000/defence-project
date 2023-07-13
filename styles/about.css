@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100%;
+    
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #F4F4F4;
+   
+}
+header h1{
+    font-family: 'cormorant';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 70.19%;
+    color: #A9592C;
+    margin-left: 20px;
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    
+}
+ul li{
+    display: flex;
+    list-style: none;
+   
+}
+
+li a{
+    text-decoration: none;
+    display: flex;
+    color: #A9592C;
+    padding: 10px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+   
+}
+.signup-sec{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    
+}
+.signup-sec a{
+    text-decoration: none;
+    border: none;
+    background:#A9592C; ;
+    border-radius: 15px;
+    color: white;
+    padding: 12px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    width: 120px;
+}
+.about-landing{
+    /* border-radius: 742px; */
+    background: #2CA993;
+    background: url(), lightgray 0px -0.036px / 125.692% 100.012% no-repeat;
+     /* filter: blur(300px); */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding:20px ;
+
+
+}
+
+.about-landing-left h1{
+    color: #000;
+    font-size: 32px;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    text-align: center;
+    color: #A9592C;
+} 
+.about-landing-left p{
+    width: 502px;
+    flex-shrink: 0;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    text-align: center;
+    color: #A9592C;
+}
+#landing-img{
+    width: 706px;
+    height: 592px;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+.second-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    background: #F4F4F4;
+}
+.our-vision{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 30px;
+}
+#vision-img{
+    width: 606px;
+    height: 592px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    /* padding: 40px; */
+    margin: 10px;
+}
+.vision h2{
+    color: #000;
+    font-size: 32px;
+    font-family: 'Dm Sans';
+    font-weight: 700;
+    text-align: left;
+}
+.vision p{
+        color: #000;
+        font-size: 20px;
+       font-family: 'Dm Sans';
+       width: 500px;
+       text-align: left;
+       
+}
+.mission h2{
+     color: #000;
+    font-size: 32px;
+    font-family: 'Dm Sans';
+    font-weight: 700;
+    text-align: left;
+}
+.mission p{
+     color: #000;
+        font-size: 20px;
+       font-family: 'Dm Sans';
+       width: 500px;
+       text-align: left;
+}
+.goals h2{
+        color: #000;
+    font-size: 32px;
+    font-family: 'Dm Sans';
+    font-weight: 700;
+    text-align: left;
+}
+.goals p{
+        color: #000;
+        font-size: 20px;
+       font-family: 'Dm Sans';
+       width: 500px;
+       text-align: left;
+}
+
+.made-easy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin-top: 2;
+}
+.made-easy h2{
+     color: #000;
+    font-size: 32px;
+    font-family: 'Dm Sans';
+    font-weight: 700;
+    padding: 20px;
+}
+.book-service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.book-service p{
+        color: #000;
+        font-size: 14px;
+       font-family: 'Dm Sans';
+       width: 200px;
+       text-align: left;
+}
+.our-customer{
+    display: flex;
+    justify-items: center;
+    width: 100%;
+    padding: 20px;
+
+}
+.customer{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-left: 300px;
+    margin: 0px auto;
+    padding: 20px;
+    padding-top: 40px;
+    border-radius: 10px;
+    background: #F4F4F4;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.customer h1{
+    font-family: 'Assistant';
+    font-size: 20px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #A9592C;
+}
+
+.whatsapp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+#whatsapp{
+    width: 20px;
+}
+
+.whatsapp{
+    font-family: 'Assistant';
+    font-size: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #A9592C;
+
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background: #A9592C;
+    justify-content: center;
+    
+}
+
+.footer-container{
+        display: flex;
+        justify-content: center;
+        gap: 90px;
+        align-items: center;
+        margin:20px;
+        padding-top: 40px;
+
+
+}
+.footer-express{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    
+}
+
+.footer-express h1{
+    font-family: 'cormorant';
+    font-size: 20px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #FFF;
+}
+.footer-express p{
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Assistant';
+    font-weight: 200;
+    line-height: 30px;
+    width: 350px;
+    text-align: left;
+}
+.social-media{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.social-media h1{
+    font-family: 'cormorant';
+    font-size: 20px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #FFF;
+}
+.social-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+.social-image a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    color:white;
+    border-radius: 50px;
+    padding: 5.5px;
+    align-items: center;
+
+}
+.social-image a:hover{
+  background-color: black;
+}
+.contact-us{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 10px;
+
+}
+.contact-us h1{
+    font-family: 'cormorant';
+    font-size: 20px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #FFF;
+}
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    
+}
+.myphone{
+    display: flex;
+    gap: 10px;
+    font-family: 'Assistant';
+    font-size: 15px;
+    font-weight: 200;
+    color: #FFF;
+    padding-top: 10px;
+}
+.contact img{
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    color: #FFF;
+}
+
+.location{
+    display: flex;
+    gap: 10px;
+    font-family: 'Assistant';
+    font-size: 15px;
+    font-weight: 200;
+    color: #FFF;
+}
+.mail-box{
+    display: flex;
+    gap: 10px;
+    font-family: 'Assistant';
+    font-size: 15px;
+    font-weight: 200;
+    color: #FFF;
+}
+.mail-box img{
+    width: 18px;
+    height: 6px;
+    flex-shrink: 0;
+    color: #FFF;
+}
+.right-reserve{
+    text-align: center;
+    margin-top: 150px;
+    font-family: 'Assistant';
+    font-size: 15px;
+    font-weight: 300;
+    color: #FFF;
+    padding-bottom: 20px;
+}

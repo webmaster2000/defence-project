@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/landing.css">
+  <style>
+    /* CSS Animation */
+    @keyframes showAnimation {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* CSS Transition */
+    .heropage-left {
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .heropage-left.show {
+      opacity: 1;
+    }
+  </style>
+  <title>B-Express</title>
+</head>
+
+<body>
+  <header>
+    <h1>B-Express</h1>
+
+    <!-- <div class="navigation hidden">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div> -->
+
+    <form id="signup-form">
+      <div class="signup-sec">
+        <a href="signup.html">Sign Up</a>
+        <a href="login.html">Login</a>
+      </div>
+    </form>
+  </header>
+  <div class="heropage">
+    <div class="heropage-left">
+      <div class="animation-container">
+        <h2>
+          Welcome B-Express Logistics, <br> <span> Fast and Easily</span>
+        </h2>
+      </div>
+      <button id="button">Book Now</button>
+    </div>
+    <div>
+      <img id="heroimage" src="./delivery-1 1.png" alt="">
+    </div>
+  </div>
+  <script>
+    const heading = document.querySelector(".animation-container h2");
+    const sentence = heading.innerText;
+    let index = 0;
+    let count = 0;
+
+    function showSentence() {
+      if (index < sentence.length) {
+        heading.innerText = sentence.slice(0, index + 1);
+        index++;
+      } else {
+        index = 0; // Reset index to restart the animation
+        count++;
+
+        if (count === 1) {
+          clearInterval(interval); // Stop the animation
+          document.querySelector(".heropage-left").classList.add("show"); // Show the heropage-left element
+        }
+      }
+    }
+    const interval = setInterval(showSentence, 200); // Show sentence every 200 milliseconds (0.2 seconds)
+
+
+
+    document.getElementById("button").addEventListener("click", function() {
+  const isLoggedIn = false; // Replace with your logic to check if the user is logged in or not
+  const errorMessage = document.querySelector(".heropage-left .error-message");
+
+  if (isLoggedIn) {
+    // User is logged in, redirect to book now page
+    window.location.href = "book-now.html";
+  } else {
+    if (errorMessage) {
+      // Error message already exists, remove it
+      errorMessage.remove();
+    } else {
+      // Error message doesn't exist, create and display it
+      const newErrorMessage = document.createElement("p");
+      newErrorMessage.innerText = "You need to sign up or login before you can book.";
+      newErrorMessage.style.color = "blue";
+      newErrorMessage.classList.add("error-message");
+      document.querySelector(".heropage-left").appendChild(newErrorMessage);
+    }
+  }
+});
+
+
+  
+  </script>
+</body>
+
+</html>

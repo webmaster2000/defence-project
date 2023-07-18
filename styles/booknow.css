@@ -94,6 +94,7 @@ li a{
     justify-content: space-between;
     padding: 20px;
     background-image: url(./Rectangle\ 4204.png);
+    border-radius: 10px;
 }
 label{
     font-size: 20px;
@@ -154,4 +155,26 @@ button{
     font-size: 20px;
     font-weight: bold;
   }
+
+
+  @media screen and (max-width :576px) {
+    #deliver-form{
+        width: 100%;
+        text-align: center;
+    }
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        padding: 15px;
+        margin: 5px;
+        margin-left: 30px;
+        border-radius: 5px;
+        border: none;
+        background-color: aqua;
+        color: antiquewhite;
+        font-weight: 700;
+    }
+}
   

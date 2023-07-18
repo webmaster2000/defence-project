@@ -16,13 +16,14 @@ header{
     justify-content: space-between;
     align-items: center;
     background: #F4F4F4;
+    padding: 30px;
    
 }
 header h1{
     font-family: 'cormorant';
     font-style: normal;
     font-weight: 500;
-    font-size: 36px;
+    font-size: 39px;
     line-height: 70.19%;
     color: #A9592C;
     margin-left: 20px;
@@ -50,6 +51,9 @@ li a{
     font-weight: 500;
    
 }
+.manu-bar {
+    display: none;
+}
 .hidden {
     display: none;
 }
@@ -58,7 +62,8 @@ li a{
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 30px;
+    /* padding: 30px; */
+
     
 }
 .signup-sec a{
@@ -87,7 +92,7 @@ li a{
 }
 #heroimage{
     width: 721px;
-    height: 530px;
+    height: 610px;
    flex-shrink: 0
    
 }
@@ -142,22 +147,117 @@ li a{
     }
   }
   
-  /* CSS Transition
-  .heropage-left {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+
+  @media screen and (max-width :576px) {
+  
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background: #F4F4F4;
+        width: 100%;
+        padding: 20px;
+     
+    }
+    header h1{
+         width: 100%;
+        font-family: 'cormorant';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 70.19%;
+        color: #A9592C;
+        margin-left: 20px;
+    }
+    #signup-form{
+        position: relative;
+        
+    }
+
+    .signup-sec{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 40px;
+        z-index: 1;
+        right: 40px;
+        transform: translateY(-200%); 
+    }
+    
+
+    .signup-sec a{
+        text-decoration: none;
+        border: none;
+        background:#A9592C; 
+        border-radius: 15px 50px;
+        color: white;
+        padding: 12px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        text-align: center;
+        width: 120px;
+        
+    }
+    .signup-sec a:hover{
+        background:white;
+        color: #A9592C;
+    }
+    .active{
+        transform: translateY(0%);
+    }
+
+    .heropage{
+        background: url(<path-to-image>), lightgray 100% / cover no-repeat;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+     
+    }
+
+    #heroimage{
+        width: 350px;
+        height: 250px;
+       flex-shrink: 0
+       
+    }
+    .heropage-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+       
+    
+    }
+    #button{
+
+        background:#A9592C; ;
+        border-radius: 15px;
+        color: white;
+        padding: 15px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+         width: 140px;
+         border: none;
+         margin: 30px;
+    
+    }
+    #button:hover{
+        background-color:lightgray;
+        color: #A9592C;
+    }
+    .manu-bar {
+        fill:  #A9592C;
+        display: inline-block;
+        float: left; 
+        z-index: 2px;
+    }
+
   }
-  
-  .heropage-left.show {
-    opacity: 1;
-  }
-  
-  .image-container {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
-  
-  .heropage-left.show .image-container {
-    opacity: 1;
-  } */
-  

@@ -56,17 +56,11 @@ li a{
     font-weight: 500;
    
 }
-/* ul a:hover{
-    border-bottom: 3px solid rgb(19, 15, 15);
-    padding-bottom: 1px
-} */
-    
 
 form{
     width: 30%;
     padding:30px;
     margin: 40px auto;
-   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -168,5 +162,142 @@ button:hover{
     cursor: pointer;
     right: 10px;
     
-   
+  }
+
+  @media screen and (max-width :576px) {
+
+
+    body{
+        width: 100%;
+        background-color:#888;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background: #F4F4F4;
+        padding: 30px;
+      
+       
+    }
+
+
+    form{
+        width: 80%;
+        padding:30px;
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 10px;
+        background-image: url(./Rectangle\ 4204.png);
+        /* background-repeat: no-repeat; */
+        /* background-size: cover; */
+        /* background: #A9592C; */
+    }
+    form label{
+        width: 60%;
+        padding: 10px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 70.19%;
+        float: left;
+        color: white;
+    }
+    form input{
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        border: none;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 70.19%;
+      
+       
+    }
+    form button{
+        background-color: darkcyan;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 70.19%;
+        color: aliceblue;
+        width: 70%;
+        margin-left: 35px;
+        padding: 19px;
+        border: none;
+        border-radius: 15px;
+     
+    }
+    button:hover{
+        background-color: white;
+        color: darkcyan;
+    }
+    .had-acc{
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 80.19%;
+        width: 250px;
+    }
+    .had-acc a{
+        text-decoration: none;
+        color: rgb(42, 207, 207);
+       
+    }
+    .had-acc p{
+        display: none;
+    }
+    .create-acc{
+        color: #FFFFFF;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 70.19%;
+        text-align: center;
+        margin: 10px;
+        margin-bottom: 30px;
+       
+    }
+    .forgot-password-container {
+        display: block;
+      }
+      
+      #password-reset-container {
+        display: none;
+      }
+      .password-container {
+        position: relative;
+       
+      }
+     
+     .fa-light{
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 46%;
+        right: 10px; 
+        cursor: pointer;
+        right: 10px;
+        
+      }
+
+
+
+
   }

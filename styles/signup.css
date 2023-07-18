@@ -190,3 +190,86 @@ form input{
     right: 10px;
     cursor: pointer;
   }
+
+  
+  @media screen and (max-width :576px) {
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background: #F4F4F4;
+        padding: 20px;
+      
+       
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       background-color:#888;
+        width: 100%;
+        
+    }
+    
+    form{
+        width: 90%;
+        padding:30px;
+        background-image:url(./Rectangle\ 4204.png);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 20px;
+        margin: 20px;
+    }
+    form label{
+        width: 60%;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 18px;
+        line-height: 70.19%;
+        float: left;
+        color: black;
+        padding: 5px;
+    }
+    form input{
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        border: none;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 70.19%;
+       
+    }
+    #submit-button{
+        background-color: darkcyan;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 70.19%;
+        color: aliceblue;
+        width: 70%;
+        margin-left: 38px;
+        padding: 19px;
+        border: none;
+        border-radius: 15px;
+        transition: 0.9s;
+     
+    }
+    #submit-button:hover{
+        background-color:white ; 
+        color: darkcyan ;
+        transform: scale(0.9);
+    }
+
+  }
+

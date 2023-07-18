@@ -32,18 +32,10 @@
 <body>
   <header>
     <h1>B-Express</h1>
-
-    <!-- <div class="navigation hidden">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </div> -->
-
+    <svg class="manu-bar" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg>
+        
     <form id="signup-form">
-      <div class="signup-sec">
+      <div class="signup-sec"  data-visible="false">
         <a href="signup.html">Sign Up</a>
         <a href="login.html">Login</a>
       </div>
@@ -108,6 +100,12 @@
   }
 });
 
+const manuBtn = document.querySelector('.manu-bar');
+const navigation = document.querySelector ('.signup-sec');
+manuBtn.addEventListener("click", () => {
+  
+    navigation.classList.toggle('active')
+}); 
 
   
   </script>

@@ -58,6 +58,8 @@ li a{
     justify-content: center;
     align-items: center;
    background-color:#888;
+   padding: 20px;
+
     
 }
 
@@ -69,6 +71,7 @@ form{
     flex-direction: column;
     justify-content: center;
     border-radius: 20px;
+  padding: 20px;
 
 }
 form label{
@@ -204,6 +207,18 @@ form input{
       
        
     }
+    .create-acc{
+        color: #FFFFFF;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 70.19%;
+        text-align: center;
+        margin: 10px;
+        margin-bottom: 30px;
+        /* width: 100%; */
+    }
     .container{
         display: flex;
         justify-content: center;
@@ -214,7 +229,7 @@ form input{
     }
     
     form{
-        width: 90%;
+        width: 95%;
         padding:30px;
         background-image:url(./Rectangle\ 4204.png);
         display: flex;
@@ -229,7 +244,7 @@ form input{
         font-style: normal;
         font-weight: 200;
         font-size: 18px;
-        line-height: 70.19%;
+        line-height: 90.19%;
         float: left;
         color: black;
         padding: 5px;
@@ -270,6 +285,32 @@ form input{
         color: darkcyan ;
         transform: scale(0.9);
     }
+    .fa-light{
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 48%;
+        right: 10px; 
+        cursor: pointer;
+        right: 10px;
+        
+      }
+    
+      .fa-eye {
+        color: #888;
+      }
+      
+      .fa-eye-slash {
+        color: #333;
+      }
+      .fa-lightt{
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 35%;
+        right: 10px;
+        cursor: pointer;
+      }
 
   }
 
